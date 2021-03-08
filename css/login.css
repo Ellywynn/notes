@@ -1,0 +1,16 @@
+.login-form{
+    width: 400px;
+    height: 400px;
+}
+
+#enter-error{
+    top: 70px;
+}
+
+#login-error{
+    top: 160px;
+}
+
+#password-error{
+    top: 230px;
+}

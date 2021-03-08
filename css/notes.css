@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 10%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #888;
+}
+
+#username{
+    position: absolute;
+    left: 20px;
+}
+
+#logout{
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+}
+
+.sidebar{
+    width: 20%;
+    background-color: #eee;
+    height: 100%;
+    overflow-y: auto;
+    display: block;
+    border-right: 3px solid black;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+}
+
+.note-count{
+    display: inline;
+}
+
+.add-note{
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.note-content{
+    height: 100%;
+    width: 80%;
+}
+
+.note-name{
+    height: 7%;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.note-name input[type=text]{
+    width: 80%;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px;
+    margin: 0 2% 0 2%;
+    background-color: #aaa;
+}
+
+#save-button{
+    width: 10%;
+    height: 70%;
+}
+
+.note-text{
+    height: 93%;
+}
+
+.note-text textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #eee;
+}
+
+.note{
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;  
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .add-note{
+        position: unset;
+    }
+    .note-count{
+        display: block;
+    }
+    .info{
+        position: static;
+    }
+}

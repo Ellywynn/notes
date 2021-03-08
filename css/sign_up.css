@@ -1,0 +1,19 @@
+#login-error{
+    top: 160px;
+}
+
+#email-error{
+    top: 230px;
+}
+
+#password-error{
+    top: 300px;
+}
+
+#repeated-error{
+    top: 370px;
+}
+
+.red-border{
+    border-color: red;
+}
